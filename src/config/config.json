@@ -1,0 +1,35 @@
+{
+  "site": {
+    "title": "Peter Nylanders blog",
+    "base_url": "https://penyland.github.io/",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "500",
+    "logo_height": "34",
+    "logo_text": "A tale of passion and code! And beer and heavy metal!"
+  },
+
+  "settings": {
+    "pagination": 10,
+    "summary_length": 100
+  },
+
+  "metadata": {
+    "meta_author": "Peter Nylander",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Bookworm Light Astro Blog Template"
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "copyright": "Copyright © 2025 a theme by [Themefisher](https://themefisher.com)"
+  },
+
+  "contactinfo": {
+    "address": "355 S Grand Ave <br/> Los Angeles, CA 90071",
+    "email": "info@bookworm.org",
+    "phone": "+800 567 1234"
+  }
+}
