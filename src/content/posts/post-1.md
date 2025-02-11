@@ -1,23 +1,30 @@
 ---
-title: "How to make toys from old Olarpaper"
+title: "Trying out Podman"
 meta_title: ""
 description: "meta description"
-date: 2022-04-01T05:00:00Z
+date: 2025-02-11T22:45:00Z
 image: "/images/posts/01.jpg"
-categories: ["art"]
-authors: ["Mark Dinn"]
-tags: ["diy", "toy"]
+categories: ["containers"]
+authors: ["Peter Nylander"]
+tags: ["docker", "podman"]
 draft: false
 ---
 
-Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+Trying out Podman as an alternative to Docker.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+## Installing
+Start by installing Podman on your system. Download from here https://podman-desktop.io/
+Then follow the setup guide.
 
-## Creative Design
+## Running
+podman run -d -p 10000:10000 -p 10001:10001 -p 10002:10002 -v c:/Temp/azurite:/data mcr.microsoft.com/azure-storage/azurite:latest
 
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+## Using Podman with the Docker extension for VS Code
 
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+To use Podman with the Docker extension for VS Code, you need to set the `DOCKER_HOST` environment variable to `npipe:////./pipe/podman-machine-default`.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+Open settings and find the key Docker:Environment. Add the following value:
+
+DOCKER_HOST = npipe:////./pipe/podman-machine-default
+
+![alt text](/images/posts/post-1-image-1.png)
