@@ -13,7 +13,9 @@
 
   "settings": {
     "pagination": 10,
-    "summary_length": 100
+    "summary_length": 100,
+    "theme_switcher": true,
+    "default_theme": "system"
   },
 
   "metadata": {
