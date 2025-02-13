@@ -80,3 +80,7 @@ In my case, the ip address was `10.88.0.15`. Enter this in the `Host name/addres
 Your ip address will most likely be different, so make sure to use the correct one.
 
 Now you should be able to connect to the PostgresSQL database and start working with it.
+
+### Links
+https://medium.com/@marvinjungre/get-postgresql-and-pgadmin-4-up-and-running-with-docker-4a8d81048aea
+https://www.baeldung.com/ops/postgresql-docker-setup
