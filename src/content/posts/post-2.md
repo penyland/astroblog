@@ -1,8 +1,8 @@
 ---
-title: "PostgreSQL with Docker"
+title: "Running PostgreSQL in a container and managing it with pgAdmin"
 meta_title: ""
 description: "meta description"
-date: 2025-02-11T22:45:00Z
+date: 2025-02-13T19:53:00Z
 image: "/images/posts/01.jpg"
 categories: ["containers", "postgres", "databases"]
 authors: ["Peter Nylander"]
@@ -10,8 +10,8 @@ tags: ["docker", "podman", "postgresql", "databases"]
 draft: false
 ---
 
-# Running PostgreSQL with Docker.
-In this post, we will look at how to run a PostgreSQL database and pgAdmin with Docker.
+# Running PostgreSQL in a container and managing it with pgAdmin.
+In this post, we will look at how to run a PostgreSQL database and pgAdmin in containers on your local machine.
 This is a great way to get started with PostgreSQL without having to install it on your local machine.
 
 ## Pulling the image
